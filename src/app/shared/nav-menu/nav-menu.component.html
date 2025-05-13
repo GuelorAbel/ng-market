@@ -1,0 +1,67 @@
+<section class="navbar">
+               <!-- espace du logo -->
+          <div class="navbar-start">
+               <a class="navbar-brand" href="#">
+                    <img [src]="logo" alt="Logo" class="w-8 h-8" />
+               </a>
+
+          </div>
+
+          <!-- liens du menu de navigation  sur desktop-->
+          <nav class="navbar-end hidden md:flex">
+               <ul class="menu menu-horizontal">
+                    <li>
+                         <a routerLink="/accueil" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                              Accueil
+                         </a>
+                    </li>
+                    <li>
+                         <a routerLink="/boutique" routerLinkActive="active">Boutique</a>
+                    </li>
+                    <li>
+                         <a routerLink="/se-connecter" routerLinkActive="active">Se connecter</a>
+                    </li>
+                    <li>
+                         <a routerLink="/mon-panier" routerLinkActive="active">
+                              <i class="ri-shopping-cart-2-fill ri-lg"></i>
+                              <span class="font-semibold">0</span>
+                         </a>
+                    </li>
+               </ul>
+          </nav>
+
+          <!-- menu burger -->
+          <div class="navbar-end md:hidden drawer">
+                    <input id="my-menu" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                    <!-- Page content here -->
+                         <label for="my-menu" class="drawer-button btn bg-transparent border-0">
+                              <i class="ri-menu-fill ri-2x"></i>
+                         </label>
+                    </div>
+                    <div class="drawer-side">
+                         <label for="my-menu" aria-label="close sidebar" class="drawer-overlay"></label>
+                         <ul class="menu menu-vertical bg-white opacity-90 backdrop-blur-lg text-base-content min-h-full w-70 ">
+                                        <!-- Sidebar content here -->
+                              <li>
+                                   <a routerLink="/accueil" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        Accueil
+                                   </a>
+                              </li>
+                              <li>
+                                   <a routerLink="/boutique" routerLinkActive="active">Boutique</a>
+                              </li>
+                              <li>
+                                   <a routerLink="/se-connecter" routerLinkActive="active">Se connecter</a>
+                              </li>
+                              <li>
+                                   <a routerLink="/mon-panier" routerLinkActive="active">
+                                        <i class="ri-shopping-cart-2-fill ri-lg"></i>
+                                        <span class="font-semibold">0</span>
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+          </div>
+          <!-- fin menu burger -->
+</section>

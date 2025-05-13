@@ -3,14 +3,14 @@ import { HomePage } from './ui/pages/home/home.page';
 
 export const routes: Routes = [
      { path: '', redirectTo: 'accueil', pathMatch: 'full' },
-     { path: 'accueil', component: HomePage, title: 'Bienvenue sur NGMARKET' },
+     { path: 'accueil', component: HomePage, title: 'BIENVENUE SUR NGMARKET' },
      {
           path: 'boutique',
           loadComponent: () => import('./ui/pages/shop/shop.page'),
           title: 'ESPACE BOUTIQUE',
      },
      {
-          path: 'detail-produit/:produitId',
+          path: 'detail-produit/:prodId',
           loadComponent: () => import('./ui/pages/product-details/product-details.page'),
           title: 'DETAILS DU PRODUI',
      },
@@ -20,7 +20,7 @@ export const routes: Routes = [
           title: 'MON PANIER',
      },
      {
-          path: 'se-connexion',
+          path: 'se-connecter',
           loadComponent: () => import('./ui/pages/login/login.page'),
           title: 'CONNEXION A VOTRE COMPTE',
      },
