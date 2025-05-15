@@ -1,3 +1,15 @@
-<app-box>
-     <h1>Bienvenue à tous </h1>
-</app-box>
+<section id="hero" class="absolute top-0 left-0 w-full min-h-screen 
+     bg-[url('/images/hero-img.jpg')] bg-cover bg-center bg-no-repeat">
+          <div class="h-full w-full">
+               <app-box>
+                    <!-- espace du msg de bienvenue et du btn CTA -->
+                    <div class="flex flex-col items-center justify-center h-[90vh] text-center gap-6">
+                         <h1 class="text-6xl uppercase text-primary">Bienvenue sur NGMARKET</h1>
+                         <a class="btn btn-primary" routerLink="/boutique" routerLinkActive="router-link-active" >
+                              Commencer votre visite
+                         </a>
+                    </div>
+               </app-box>
+          </div>
+
+</section>

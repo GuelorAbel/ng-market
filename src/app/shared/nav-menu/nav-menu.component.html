@@ -1,8 +1,12 @@
 <section class="navbar">
                <!-- espace du logo -->
           <div class="navbar-start">
-               <a class="navbar-brand" href="#">
-                    <img [src]="logo" alt="Logo" class="w-8 h-8" />
+               <a class="navbar-brand" routerLink="/">
+                    @if (isDarkTheme()) {
+                         <img alt="Logo" class="w-8 h-8" [src]="logoVariant" />
+                    } @else {
+                         <img alt="Logo" class="w-8 h-8" [src]="logo" />
+                    }
                </a>
 
           </div>
@@ -11,7 +15,7 @@
           <nav class="navbar-end hidden md:flex">
                <ul class="menu menu-horizontal">
                     <li>
-                         <a routerLink="/accueil" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                               Accueil
                          </a>
                     </li>
